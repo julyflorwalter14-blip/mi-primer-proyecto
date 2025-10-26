@@ -1,0 +1,22 @@
+git clone https://github.com/esli/practica-conflictos-git.git
+cd practica-conflictos-git
+git checkout -b feature/tarea-conflicto
+Este es el mensaje de july. 
+Este es el mensaje del Esli.
+git add mensaje.txt
+git commit -m "tarea"
+git add mensaje.txt
+git commit -m "tenemos tarea"
+git push origin feature/tarea-conflicto
+git checkout main
+git pull origin main
+git merge feature/tarea-conflicto
+<<<<<<< HEAD
+Este es el mensaje de july.
+=======
+Este es el mensaje Esli del.
+>>>>>>> feature/tarea-conflicto
+Este es el mensaje combinado de july y Esli .
+git add mensaje.txt
+git commit -m "Resolver conflicto entre july y Esli "
+git push origin mai
