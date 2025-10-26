@@ -1,0 +1,8 @@
+git clone https://github.com/usuario/repositorio-ejemplo.git
+cd repositorio-ejemplo
+git checkout -b rama-july
+git add .
+git commit -m "Cambios desde rama-july
+git push origin rama-july
+git add archivo-conflictivo
+git commit -m "Conflicto resuelto"
